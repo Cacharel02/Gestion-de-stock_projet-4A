@@ -1,0 +1,62 @@
+<app-barre [type]="type"></app-barre>
+<div class="decoration" style="margin-top: 20px;">
+<div *ngIf="type == false" >
+  
+    <div *ngFor="let produit of produits" class="caci_2">
+      <FONT size="4">Code sku : <b>{{produit.skuCode}} </b></FONT><br>
+      <FONT size="4">description : <b> {{produit.description}}</b> </FONT> <br>
+      <FONT size="4"> Vendeur :<b> {{produit.entreprise.nom}}</b> </FONT><br>
+      <FONT size="4"> prix :<b> {{produit.prix}} euros </b></FONT><br>
+      
+        <div style="margin-bottom: 0px; margin-right: 0px;">
+            <form #form="ngForm">
+                <input type="number" [(ngModel)]="qte" value="qte" name="qte" style="width: 50px;">
+                <button class="bouton_client" (click)="acheter(produit.skuCode,produit.prix,form.value['qte'],produit.entreprise.id)">Commander</button><button class="bouton_client_2">Ajouter au panier</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+<div *ngIf="type == true" >
+    <div *ngFor="let produit of produits" class="caci">
+        
+                <FONT size="4"> Code sku :<b> {{produit.skuCode}} </b></FONT> <br>
+                    <FONT size="4">description :<b> {{produit.description}}</b> </FONT><br>
+                    <FONT size="4">Quantité en stock : <b>{{produit.quantite}}</b></FONT><br>
+                
+        
+          
+    
+    <button class="bouton" (click)="modifier(produit)">Modifier</button> <button class="button" (click)="effectuerAchat(produit.skuCode,1)">Acheter au fournisseur</button>
+</div>
+    <div>
+    <button style="background-color:mediumspringgreen; margin-top: 5px;" (click)="openDialog()">Nouveau produit</button>
+</div>
+</div>
+<!--
+    <div *ngIf="type == true" >
+    <div *ngFor="let produit of produits" class="caci">
+        <table><FONT size="4">
+            <tr>
+                <td> Code sku :</td> <td><b> {{produit.skuCode}} </b></td>
+            </tr>
+            <tr>
+                <td> Description :</td> <td><b> {{produit.description}}</b></td>
+            </tr>
+            <tr>
+                <td> Quantité en stock :</td> <td><b> {{produit.quantite}}</b></td>
+            </tr>
+            </FONT>
+            <tr>
+                <td style="justify-content: right;"><button class="bouton">Modifier</button> <button class="button" (click)="effectuerAchat(produit.skuCode,1)">Acheter au fournisseur</button></td>
+            </tr>
+        </table>
+        
+          
+    </div>
+  
+    <button (click)="openDialog()">Nouveau produit</button>
+</div>
+-->
+</div>
+

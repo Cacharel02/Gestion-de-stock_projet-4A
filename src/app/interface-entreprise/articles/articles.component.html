@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <td>Code Sku</td>
+        <td>Description</td>
+        <td>Prix</td>
+        <td></td>
+        <td></td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let produit of produits">
+            <td>{{produit.skuCode}}</td>
+            <td>{{produit.description}}</td>
+            <td>{{produit.prix}}</td>
+            <td><button>Modifier</button></td>
+            <td><button (click)="supprimer(produit)">Supprimer</button></td>
+        </tr>
+    </tbody>
+</table>

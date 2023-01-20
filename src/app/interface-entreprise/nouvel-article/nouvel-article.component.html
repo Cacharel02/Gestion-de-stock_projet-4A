@@ -1,0 +1,19 @@
+<div >
+    <form  #form="ngForm">
+        <div>
+            <label for="nom">Code Sku du produit : </label>
+            <input type="text"  name="skuCode" [(ngModel)]="produit.skuCode">
+        </div>
+        <div>
+            <label for="adresse">Description du produit : </label>
+            <input type="text"  name="description" [(ngModel)]="produit.description">
+        </div>
+        <div>
+            <label for="email">Prix (en euros) : </label>
+            <input type="number"  name="prix" [(ngModel)]="produit.prix">
+        </div>
+        <div>
+            <input type="submit" value="Ajouter">
+        </div>
+    </form>
+</div>

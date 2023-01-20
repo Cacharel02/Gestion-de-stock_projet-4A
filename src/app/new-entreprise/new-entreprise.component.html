@@ -1,0 +1,50 @@
+<!--<div >
+    <form (ngSubmit)="envoyer(form)" #form="ngForm">
+        <mat-card class="contenir">
+            <mat-form-field class="decoration_field">
+                <mat-label >Nom de l'entreprise : </mat-label>
+                <input matInput type="text"  name="nom" [(ngModel)]="entreprise.nom">
+            </mat-form-field><br>
+
+            <mat-form-field class="decoration_field">
+                <mat-label >Adresse: </mat-label>
+                <input matInput type="text"  name="adresse" [(ngModel)]="entreprise.adresse">
+            </mat-form-field><br>
+
+            <mat-form-field class="decoration_field">
+                <mat-label >Email : </mat-label>
+                <input mat Input type="text"  name="email" [(ngModel)]="entreprise.email">
+            </mat-form-field><br>
+            <mat-card-actions align="end">
+                <input type="submit" value="S'inscrire">
+            </mat-card-actions>
+        </mat-card>
+    </form>
+</div>-->
+<div >
+    <form (ngSubmit)="envoyer(form)" #form="ngForm">
+        <mat-card class="container">
+        
+            <mat-form-field class="example-form-field">
+                <mat-label>Nom</mat-label>
+                <input matInput type="text"  name="nom" [(ngModel)]="entreprise.nom">
+            </mat-form-field><br>
+            <mat-form-field class="example-form-field">
+                <mat-label>Adresse</mat-label>
+                <input matInput type="text"  name="adresse" [(ngModel)]="entreprise.adresse">
+            
+            </mat-form-field><br>
+            <mat-form-field class="example-form-field">
+                <mat-label>Email</mat-label>
+                <input matInput type="text"  name="email" [(ngModel)]="entreprise.email">
+            
+            </mat-form-field>
+            <mat-card-actions align="end">
+                <input type="submit" value="S'inscrire">
+            </mat-card-actions>
+    
+            
+        </mat-card>
+    </form>
+
+</div>

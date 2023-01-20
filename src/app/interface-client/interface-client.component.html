@@ -1,0 +1,7 @@
+<app-barre [type]="false" ></app-barre>
+
+<div *ngFor="let commande of commandes">
+    <app-commande-client [numero]="commande.numero" ></app-commande-client>
+</div>
+
+

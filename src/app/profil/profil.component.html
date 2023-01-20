@@ -1,0 +1,16 @@
+<app-barre [type]="type"></app-barre>
+<div class="caci_3">
+    <div class="profil"> <FONT size="5" > <b>Votre profil</b></FONT></div>
+    <div class="interieur_profil">
+        <div *ngIf="type == false">
+            Nom : {{client.nom}} <br>
+            Email : {{client.email}}
+        </div>
+        <div *ngIf="type == true">
+            <FONT size="4" ><b>Nom :</b> {{entreprise.nom}} </FONT> <br>
+            <FONT size="4" ><b>Adresse :</b> {{entreprise.adresse}} </FONT><br>
+            <FONT size="4" ><b>email :</b> {{entreprise.email}} </FONT><br>
+            <FONT size="4" ><b>fond :</b> {{entreprise.fond}} € </FONT>
+        </div>
+    </div>
+</div>

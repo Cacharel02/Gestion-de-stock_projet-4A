@@ -1,0 +1,113 @@
+/**section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    /**display: flex;
+    justify-content: space-between;
+    /**flex-wrap: wrap;
+    display: block;
+  }
+  
+  .example-button-container {
+    /**display: flex;
+    justify-content: center;
+    width: 120px;
+    display:block;
+  }
+  
+  .p {
+    position: absolute;
+    background: lime;
+    top: 10px;
+    right: 30px;
+  }
+  
+  .example-form mat-slide-toggle {
+    margin: 8px 0;
+    display: block;
+  }
+  
+  .encadrer-un-contenu{ border: 1px solid black; padding: 5px; } 
+  
+  .cadre {
+    width: 400px;
+    height: 100pxpx;
+    position: absolute;
+    top: 30%;
+    left: 37%;
+  }
+  
+  h4{
+    border: 3px solid #3CC;
+    margin: 10px 10px;
+    padding: 10px;
+  }
+  
+  .centre{
+    text-align: center;
+  }
+  mat-grid-tile {
+    background: lightblue;
+  }**/
+  .grand_cadre{
+    border : 11px solid black;
+    border-radius: 8px ;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: auto;
+    
+
+  }
+
+  .petit_cadre{
+    border : 1px solid white;
+    padding : 10px;
+    background-color: lightblue;
+
+  }
+  .dernier_cadre{
+    border : 4px solid white;
+    
+    
+  }
+
+  .corps{
+    
+  }
+  .head{
+    border: 10px solid grey;
+    border-radius: 8px;
+    background-color: bisque;
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: black;
+  }
+
+  .bas{
+    padding-left: 10%;
+    border: 2px solid grey;
+    background-color: lightblue;
+    bottom: 0;
+    position:fixed;
+    width: 100%;
+  }

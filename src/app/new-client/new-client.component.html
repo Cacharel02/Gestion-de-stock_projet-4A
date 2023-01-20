@@ -1,0 +1,15 @@
+<div >
+    <form (ngSubmit)="envoyer(form)" #form="ngForm">
+        <div>
+            <label for="nom">Nom du client : </label>
+            <input type="text"  name="nom" [(ngModel)]="client.nom">
+        </div>
+        <div>
+            <label for="email">Email : </label>
+            <input type="text"  name="email" [(ngModel)]="client.email">
+        </div>
+        <div>
+            <input type="submit" value="S'inscrire">
+        </div>
+    </form>
+</div>

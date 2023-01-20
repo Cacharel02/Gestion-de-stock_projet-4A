@@ -1,0 +1,99 @@
+
+
+<div class="corps">
+<div class="head">
+  <i><FONT size="10">Bienvenue sur notre site</FONT></i>
+</div>
+
+  <div class="grand_cadre">
+ 
+    <form (ngSubmit)="userType()" [formGroup] = "form">
+      <div class="petit_cadre">
+        
+          <input  type="radio" formControlName="type" id="client" value="Client" >
+          <label style="padding-left:9px" for="client"><FONT size="4"><b>Client</b></FONT></label><br>
+    
+  
+    </div>
+    <div class="petit_cadre">
+      <input type="radio" formControlName="type" id="entreprise" value="Entreprise">
+      <label style="padding-left:9px" for="entreprise"><FONT size="4"><b> Entreprise</b></FONT></label>
+    </div > 
+      <div  class="dernier_cadre">
+          <input style="border-color: white;  width: 100%" type="submit" value="Continuer">
+      </div>
+    </form>
+    </div>
+    <div class="bas">
+Contactez nous <br>
+A propos du site <br>
+Besoin d'aide ?
+    </div>
+
+    
+  
+
+
+<!--<h1>
+
+<p>Slide Toggle inside of a Template-driven form</p>
+
+
+<mat-grid-list cols="1" rowHeight="3:1" class="cadre">
+  <mat-grid-tile
+   class="petit-cadre">
+    <form>
+      
+      <mat-slide-toggle ngModel name="enableWifi">Client</mat-slide-toggle>
+    </form>
+  
+  </mat-grid-tile>
+  <mat-grid-tile
+  class="petit-cadre">
+  <form>
+  
+    <mat-slide-toggle ngModel name="acceptTerms" required>Entreprise</mat-slide-toggle>
+  </form>
+  
+</mat-grid-tile>
+<mat-grid-tile
+  class="petit-bouton">
+  <section>
+    
+    <div class="example-button-row">
+      
+    
+      
+      <button mat-raised-button color="warn">Continuer</button>
+      
+      
+    </div>
+  </section>
+  
+</mat-grid-tile>
+  
+</mat-grid-list>
+    
+  
+  
+    <span class="encadrer-un-contenu">Ce texte est dans un cadre.</span> -->
+    
+</div> 
+
+
+
+
+
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+

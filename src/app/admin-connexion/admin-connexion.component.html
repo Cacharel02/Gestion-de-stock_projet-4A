@@ -1,0 +1,82 @@
+
+
+
+
+<div>
+    <form (ngSubmit)="envoyer(form)" #form="ngForm" class="form">
+        <mat-card class="container">
+    
+    <!--<div>
+            <label for="identifiant">Identifiant : </label>
+            <input type="text"  name="codeAdmin" [(ngModel)]="admin.codeAdmin">
+        </div>
+        <div>
+            <label for="password">Mot de passe : </label>
+            <input type="text"  name="password" [(ngModel)]="admin.password">
+        </div>
+        <div>
+            <input type="submit" value="Se connecter">
+        </div>-->
+        <mat-form-field class="example-form-field">
+            <mat-label>Code Administrateur</mat-label>
+            <input matInput type="text" name="codeAdmin" [(ngModel)]="admin.codeAdmin">
+            <!--<button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+              <mat-icon>close</mat-icon>
+            </button>-->
+        </mat-form-field><br>
+        <mat-form-field class="example-form-field">
+            <mat-label>Mot de passe</mat-label>
+            <input matInput type="text" name="password" [(ngModel)]="admin.password">
+            
+        </mat-form-field>
+        <mat-card-actions align="end">
+            <input type="submit" value="Se connecter">
+          </mat-card-actions>
+<a routerLink="/nouvelle entreprise" style="margin: auto; color: bisque;">Votre entreprise n'a pas de compte</a>
+        
+</mat-card>
+</form>
+</div>
+        
+   
+
+
+
+   
+        <!--<form (ngSubmit)="envoyer(form)" #form="ngForm">
+            <h1>
+                <div>
+                    <p style="text-align:center">
+                        <FONT size="4"> Identifiant : </FONT></p>
+                <mat-form-field class ="carre" appearance="fill" type="text" name="codeAdmin" [(ngModel)]="admin.codeAdmin">
+                  <mat-label>Fill form field</mat-label>
+                  <input matInput placeholder="Numero client">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+            </div>
+    
+            <div>
+                <p style="text-align:center">
+                    <FONT size="4"> Mot de passe : </FONT> </p>
+                <mat-form-field appearance="fill" class="deco" type="text" name="password" [(ngModel)]="admin.password">
+                    <mat-label>Fill form field</mat-label>
+                    <input matInput placeholder="Mot de passe">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <mat-hint>Hint</mat-hint>
+                  </mat-form-field>
+            </div>
+        
+        </h1> 
+        <section>
+            
+            <h3 class="example-button-row">
+              
+              <div class="example-button-row" >
+                <input type="submit" value="Se connecter">
+            </div>
+              
+              
+            </h3>
+          </section>
+        </form> -->

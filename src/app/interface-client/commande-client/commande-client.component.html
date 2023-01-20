@@ -1,0 +1,7 @@
+
+    <div class="commande_client">
+    <FONT size="4">Numéro de la commande :{{numero}}</FONT>
+    <div *ngFor="let ligne of lignes"> 
+       <FONT size="4"> Code Sku : {{ligne.skuCode}} Quantité : {{ligne.quantite}} Prix unitaire {{ligne.prix}}</FONT>
+    </div>
+</div>

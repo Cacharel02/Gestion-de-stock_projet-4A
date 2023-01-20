@@ -1,0 +1,22 @@
+<div >
+    <form (ngSubmit)="envoyer(form)" #form="ngForm">
+        <mat-card class="container">
+        
+            <mat-form-field class="example-form-field">
+                <mat-label>Code Client</mat-label>
+                <input matInput type="text"  name="codeClient" [(ngModel)]="client.codeClient">
+            </mat-form-field><br>
+            <mat-form-field class="example-form-field">
+                <mat-label>Mot de passe</mat-label>
+                <input matInput type="text"  name="password" [(ngModel)]="client.password">
+            
+            </mat-form-field>
+            <mat-card-actions align="end">
+                <input type="submit" value="Se connecter">
+            </mat-card-actions>
+    
+            <a class="route" routerLink="/nouveau client"> Vous n'avez pas de compte ?</a>
+        </mat-card>
+    </form>
+
+</div>

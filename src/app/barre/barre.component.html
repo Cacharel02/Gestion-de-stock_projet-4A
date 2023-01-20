@@ -1,0 +1,29 @@
+<div id="wrap" *ngIf="type">
+    <ul class="navbar">
+      <li>
+        <a routerLink="/interface entreprise/liste produits">Produits vendus</a>
+      </li>
+      <li>
+        <a routerLink="/interface entreprise/profil">Votre profil</a>
+      </li>
+      <li>
+        <a routerLink="/identification" (click)="deconnecter()">Déconnexion</a>
+      </li>
+    </ul>
+</div>
+<div id="wrap" *ngIf="!type">
+    <ul class="navbar">
+      <li>
+        <a routerLink="/interface client/liste produits">Produits disponibles</a>
+      </li>
+      <li>
+        <a routerLink="/interface client/profil">Votre profil</a>
+      </li>
+      <li>
+        <a routerLink="/interface client/commandes"> Vos commandes</a>
+      </li>
+      <li>
+        <a routerLink="/identification" (click)="deconnecter()">Déconnexion</a>
+      </li>
+    </ul>
+</div>
